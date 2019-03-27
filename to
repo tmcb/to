@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-TO_DIR="${HOME}/.to"
+TO_DIR="$HOME/.to"
 
 usage(){
  cat <<EOF
@@ -13,19 +13,19 @@ EOF
 }
 
 n(){
- mkdir -p "${TO_DIR}" && TO="$1" exec dtach -c "${TO_DIR}/$1" "$2"
+ mkdir -p "$TO_DIR" && TO="$1" exec dtach -c "$TO_DIR/$1" "$2"
 }
 
 l() {
- exec find "${TO_DIR}" -type s -exec basename {} \;
+ exec find "$TO_DIR" -type s -exec basename {} \;
 }
 
 e() {
- exec dtach -a "${TO_DIR}/$1"
+ exec dtach -a "$TO_DIR/$1"
 }
 
 if [ x"$1" = x"-n" ]; then
- [ $# -eq 2 ] && n "$2" "${SHELL}"
+ [ $# -eq 2 ] && n "$2" "$SHELL"
  [ $# -eq 3 ] && n "$2" "$3"
  usage
 elif [ x"$1" = x"-l" ]; then
