@@ -13,7 +13,8 @@ EOF
 }
 
 n(){
- mkdir -p "$TO_DIR" && TO="$1" exec dtach -c "$TO_DIR/$1" "$2"
+ m=`umask`; umask 0077; mkdir -p "$TO_DIR"; umask "$m"
+ TO="$1" exec dtach -c "$TO_DIR/$1" "$2"
 }
 
 l() {
