@@ -8,7 +8,6 @@
 ```
 
 ## motivation
-
 In a local terminal session, I usually switch between applications using `fg`
 and `jobs`. This workflow breaks down too often in remote terminal sessions, for
 obvious reasons.
