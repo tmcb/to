@@ -14,3 +14,7 @@ obvious reasons.
 
 `to` brings together the convenience of a terminal multiplexer the ease of use
 of job control utilities.
+
+## noncomprehensive list of dependencies
+- `bash`
+- `dtach`
