@@ -16,7 +16,8 @@ obvious reasons.
 use of job control utilities.
 
 ## noncomprehensive list of dependencies
-- `env`
-- `sh`
-- `find`
+- `cat`
 - `dtach`
+- `env`
+- `find`
+- `sh`
