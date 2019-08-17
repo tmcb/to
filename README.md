@@ -17,4 +17,5 @@ use of job control utilities.
 
 ## noncomprehensive list of dependencies
 - `bash`
+- `find`
 - `dtach`
