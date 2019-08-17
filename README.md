@@ -16,6 +16,6 @@ obvious reasons.
 use of job control utilities.
 
 ## noncomprehensive list of dependencies
-- `bash`
+- `sh`
 - `find`
 - `dtach`
